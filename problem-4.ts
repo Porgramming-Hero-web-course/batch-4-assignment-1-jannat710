@@ -16,16 +16,19 @@
             return parseFloat((Math.PI * data.radius * data.radius).toFixed(2));
         } else if ('width' in data && 'height' in data) {
             return (data.width * data.height);
-        }else{
+        } else {
             throw new Error('Please give numbers')
         }
     }
 
-    const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
+    const circleArea = calculateShapeArea({
+        shape: "circle",
+        radius: 5
+    });
 
     const rectangleArea = calculateShapeArea({
         shape: "rectangle",
         width: 4,
         height: 6,
-      });
+    });
 }
