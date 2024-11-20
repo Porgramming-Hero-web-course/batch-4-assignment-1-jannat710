@@ -1,6 +1,6 @@
 {
-    const countWordOccurrences = (str:string,word:string)=>{
-        
+    const countWordOccurrences = (str:string,word:string): number=>{
+
         let count:number = 0;
         let wordCount = str.toLocaleLowerCase().split(" ");
         let lowerCaseWord = word.toLocaleLowerCase();
