@@ -6,5 +6,5 @@
         name: "Alice",
         age: 30
     };
-    const result = getProperty(person, "name");
+    getProperty(person, "name");
 }

@@ -10,12 +10,13 @@
             this.year = year;
         }
         getCarAge(): number {
-            const currentYear : number = new Date().getFullYear();
-            const carAge : number = currentYear - this.year;
+            const currentYear: number = new Date().getFullYear();
+            const carAge: number = currentYear - this.year;
             return carAge;
         }
     }
     const car = new Car("Honda", "Civic", 2018);
+    car.getCarAge();
 
 
 }
